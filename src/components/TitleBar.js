@@ -10,7 +10,8 @@ class TitleBar extends React.Component{
             alignItems: "center",
             justifyContent: "space-around",
             height: "12vh",
-            fontSize: "40px"
+            fontSize: "40px",
+            borderRadius: "5px"
         }
         return (
             <h1 style={titleStyle}>LivingLoan</h1>

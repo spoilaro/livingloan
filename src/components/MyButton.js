@@ -2,6 +2,10 @@ import React from "react";
 
 class MyButton extends React.Component{
 
+    calc() {
+            
+    }
+
     render(){
         const buttonstyle = {
             color: "white",
@@ -16,7 +20,7 @@ class MyButton extends React.Component{
         }
 
         return(
-        <button style={buttonstyle} >Calculate</button>
+        <button onClick={this.calc} style={buttonstyle} >Calculate</button>
         )
     }
 }
