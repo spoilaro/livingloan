@@ -17,7 +17,6 @@ function surviveMaybe(budget){
     
     should_have = Math.round((end_month - m) * one_mont_loan + d * one_day_loan)
     var current = budget - should_have
-    console.log(current);
     
     return current;
    
