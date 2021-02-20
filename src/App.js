@@ -4,12 +4,13 @@ import './App.css';
 import TitleBar from "./components/TitleBar";
 import InputForm from './components/InputForm';
 import { surviveMaybe } from "./backend/Calculator"
+import CurrentState from "./components/CurrentState"
 
 class App extends React.Component{
 
   state = {
     budjet: 0,
-    living: "",
+    living: "No budget given!",
   }
 
   getBudjetFunc = (budjetAmount) => {
@@ -18,11 +19,12 @@ class App extends React.Component{
   }
 
   render(){
+    
     return(
       <div>
         <TitleBar/>
         <InputForm budjetAmountGetter={this.getBudjetFunc} />
-        <h2>{this.state.living}</h2>
+        <CurrentState budget={this.state.living} />
       </div>
     )
   }

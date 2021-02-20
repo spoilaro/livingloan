@@ -28,7 +28,7 @@ class InputForm extends React.Component{
             width: "35vh",
             borderRadius: "5px",
             borderColor: "white",
-            margin: "10px 0 10px 0",
+            margin: "15% 0 10px 18%",
             backgroundColor: "#e1eded",
             fontSize: "23px",
         }
@@ -40,7 +40,7 @@ class InputForm extends React.Component{
             backgroundColor: "#8bccab",
             border: "none",
             fontSize: "23px",
-            margin: "10px 0 10px 10%",
+            margin: "10px 0 10px 28%",
             postion: "absolute",
         }
 
