@@ -5,13 +5,12 @@ class TitleBar extends React.Component{
     render(){
         const titleStyle = {
             color: "white",
-            backgroundColor: "#8bccab",
+            backgroundColor: "#EE6565",
             display: "flex",
             alignItems: "center",
-            justifyContent: "space-around",
-            height: "12vh",
-            fontSize: "40px",
-            borderRadius: "5px"
+            height: "15vh",
+            fontSize: "39px",
+            padding: "0 0 0 4%"
         }
         return (
             <h1 style={titleStyle}>LivingLoan</h1>
