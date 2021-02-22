@@ -5,6 +5,7 @@ import TitleBar from "./components/TitleBar";
 import InputForm from './components/InputForm';
 import { surviveMaybe } from "./backend/Calculator"
 import CurrentState from "./components/CurrentState"
+import ResultWindow from "./components/ResultWindow";
 
 class App extends React.Component{
 
@@ -23,8 +24,7 @@ class App extends React.Component{
     return(
       <div>
         <TitleBar/>
-        <InputForm budjetAmountGetter={this.getBudjetFunc} />
-        <CurrentState budget={this.state.living} />
+        <ResultWindow/>
       </div>
     )
   }

@@ -2,3 +2,4 @@
 Here are all the colors:
 
 Light red - #EE6565
+White - white
