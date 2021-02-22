@@ -5,3 +5,10 @@
   background-color: #cce8e9;
   font-family: sans-serif;
 }
+
+.Container{
+  display: flex;
+  flex-flow: column;
+  background-color: #EE6565;
+  height: 100vh;
+}

@@ -2,9 +2,9 @@
 import React from "react";
 import './App.css';
 import TitleBar from "./components/TitleBar";
-import InputForm from './components/InputForm';
 import { surviveMaybe } from "./backend/Calculator"
 import ResultWindow from "./components/ResultWindow";
+import CalculateWindow from "./components/CalculateWindow"
 
 class App extends React.Component{
 
@@ -21,9 +21,10 @@ class App extends React.Component{
   render(){
     
     return(
-      <div>
+      <div className="Container">
         <TitleBar/>
         <ResultWindow/>
+        <CalculateWindow/>
       </div>
     )
   }
