@@ -10,7 +10,7 @@ class ResultWindow extends Component {
             fontSize: "3.1rem",
             position: "absolute",
             backgroundColor: "white",
-            fontWeight: "300"
+            fontWeight: "500"
         } 
         const backgroundStyle = {
             position: "relative",
