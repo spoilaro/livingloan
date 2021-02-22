@@ -4,7 +4,6 @@ import './App.css';
 import TitleBar from "./components/TitleBar";
 import InputForm from './components/InputForm';
 import { surviveMaybe } from "./backend/Calculator"
-import CurrentState from "./components/CurrentState"
 import ResultWindow from "./components/ResultWindow";
 
 class App extends React.Component{

@@ -1,23 +1,32 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import styles from "./ResultWindow.js";
 
-export class ResultWindow extends Component {
+class ResultWindow extends Component {
     render() {
 
         const contentStyle = {
-            backgroundColor: "white",
             position: "absolute",
-            width: "100%",
-            height: "25vh",
             color: "#EE6565",
-            fontSize: "24px"
+            fontSize: "3.1rem",
+            position: "absolute",
+            backgroundColor: "white",
+            fontWeight: "300"
         } 
         const backgroundStyle = {
             position: "relative",
+            height: "25vh",
+            width: "100%",
+            backgroundColor: "white",
+            display: "flex",
+            alignItems: "flex-end",
+            padding: "5%"
         }
 
         return (
-            <div style={backgroundStyle}>
-                <h2 style={contentStyle} >± 00,00 €</h2>
+            <div>
+                <div className="ResultContainer" style={backgroundStyle}>
+                    <h2 className="Result" style={contentStyle} >± 00,00 €</h2>
+                </div>
             </div>
         )
     }
