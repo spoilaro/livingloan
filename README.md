@@ -11,6 +11,7 @@
 - Uses Python's Flask to run API that does the calculations.
 - App doesn't record any of the numbers the user puts in it.
 - After the web app version is complete, the next step would be to port it on to React Native.
+- Web app is at the moment really only made for the mobile browser. It is usable in desktop browser too but it is horrbile to look at.
 
 <h2>Project Statement</h2>
 <p>The aim of this project is to make it easier for stundets to keep track of their student loan. It is known that the basic student loans that banks give to students are about 650 euros per month. From that it's not really hard to calculate the sum you have left for the month but it sure is more convinient to just type the current budget into the app and see the answer.</p>
