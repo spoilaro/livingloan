@@ -2,10 +2,8 @@
 import React, { useState } from "react";
 import './App.css';
 import TitleBar from "./components/TitleBar";
-import { surviveMaybe } from "./backend/Calculator"
 import ResultWindow from "./components/ResultWindow";
 import CalculateWindow from "./components/CalculateWindow"
-import InfoWindow from "./components/InfoWindow"
 import InfoWindowModal from "./components/InfoWindowModal"
 
 
