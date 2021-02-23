@@ -11,16 +11,18 @@ export class CalculateWindow extends Component {
             height: "100%",
         }
         const InfoLogoStyle = {
-            height: "60px",
+            fontSize: "60px",
+            backgroundColor: "#EE6565",
+            color: "white",
+            marginLeft: "44vw",
+            marginTop: "10%"
         }
 
         return (
             <>
                 <div className="Window" style={WindowStyle}>
                     <CalcInput/>
-                    <IconContext.Provider value={{ color: "white", className: "mylogo"}}>
-                        <AiOutlineInfoCircle/>
-                    </IconContext.Provider>
+                    <AiOutlineInfoCircle style={InfoLogoStyle}/>
                 </div>
             </>
         )
