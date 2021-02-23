@@ -5,6 +5,7 @@ import TitleBar from "./components/TitleBar";
 import { surviveMaybe } from "./backend/Calculator"
 import ResultWindow from "./components/ResultWindow";
 import CalculateWindow from "./components/CalculateWindow"
+import InfoWindow from "./components/InfoWindow"
 
 class App extends React.Component{
 
@@ -25,6 +26,7 @@ class App extends React.Component{
         <TitleBar/>
         <ResultWindow/>
         <CalculateWindow/>
+        <InfoWindow/>
       </div>
     )
   }
