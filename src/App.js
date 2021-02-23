@@ -1,35 +1,33 @@
 
-import React from "react";
+import React, { useState } from "react";
 import './App.css';
 import TitleBar from "./components/TitleBar";
 import { surviveMaybe } from "./backend/Calculator"
 import ResultWindow from "./components/ResultWindow";
 import CalculateWindow from "./components/CalculateWindow"
+import InfoWindow from "./components/InfoWindow"
+import InfoWindowModal from "./components/InfoWindowModal"
 
-class App extends React.Component{
 
-  state = {
-    budjet: 0,
-    living: "No budget given!",
+function App () {
+
+  const [showModal, setShowModal] = useState(false)
+  const openModal = () => {
+    setShowModal(prev => !prev)
   }
 
-  getBudjetFunc = (budjetAmount) => {
-    this.setState({budjet: budjetAmount});
-    this.setState({living: surviveMaybe(this.state.budjet)})
-  }
 
-  render(){
-    
     return(
-      <div className="Container">
-        <TitleBar/>
-        <ResultWindow/>
-        <CalculateWindow/>
-      </div>
-    )
-  }
-  
-  
+    <div className="Container">
+      <TitleBar/>
+      <ResultWindow/>
+      <CalculateWindow parentCallback={openModal} />
+      {showModal ? <InfoWindowModal parentCallback={openModal}/> : null}
+    </div>
+  )
 }
+  
+  
+
 
 export default App;
