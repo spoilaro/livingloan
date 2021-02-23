@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import { AiOutlineInfoCircle } from 'react-icons/ai'
 
-export class InfoWindow extends Component {
-
+export class InfoWindowModal extends Component {
     render() {
 
         const backgroundStyle = {
@@ -46,16 +45,17 @@ export class InfoWindow extends Component {
         }
 
         return (
+            
             <div style={backgroundStyle}>
                 <AiOutlineInfoCircle style={InfoLogoStyle}/>
                 <p style={TextStyle}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                     Vestibulum in dictum enim. Maecenas feugiat viverra ex. ornare. 
                     Nulla quis bibendum erat.
                 </p>
-                <input style={buttonStyle} type="submit" value="OK" ></input>
+                <input style={buttonStyle} onClick={this.props.parentCallback} type="submit" value="OK" ></input>
             </div>
         )
     }
 }
 
-export default InfoWindow
+export default InfoWindowModal

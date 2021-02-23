@@ -22,7 +22,7 @@ export class CalculateWindow extends Component {
             <>
                 <div className="Window" style={WindowStyle}>
                     <CalcInput/>
-                    <AiOutlineInfoCircle style={InfoLogoStyle}/>
+                    <AiOutlineInfoCircle onClick={this.props.parentCallback} style={InfoLogoStyle}/>
                 </div>
             </>
         )
