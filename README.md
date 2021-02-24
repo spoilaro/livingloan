@@ -1,6 +1,7 @@
 <h1> Living Loan </h1>
 
 <h2>Overall aim</h2>
+<p> !!! The app is "usable" only in mobile browser at the moment. !!!
 <p> Web app that does student loan calculation.</p> 
 <p>The app can be found at: </p>
 <a>http://livingloan.herokuapp.com/</a> 
