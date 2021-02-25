@@ -1,6 +1,0 @@
-
-Here are all the colors:
-
-Light red           #EE6565
-White               white
-Even lighter red    #FAC6C6
