@@ -52,7 +52,7 @@ export class InfoWindowModal extends Component {
                     Vestibulum in dictum enim. Maecenas feugiat viverra ex. ornare. 
                     Nulla quis bibendum erat.
                 </p>
-                <input style={buttonStyle} onClick={this.props.parentCallback} type="submit" value="OK" ></input>
+                <input style={buttonStyle} onClick={this.props.parentCloseModal} type="submit" value="OK" ></input>
             </div>
         )
     }

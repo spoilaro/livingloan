@@ -4,6 +4,10 @@ import { AiOutlineInfoCircle } from 'react-icons/ai'
 import { IconContext } from 'react-icons/lib'
 
 export class CalculateWindow extends Component {
+    constructor(props){
+        super(props)
+    }
+
     render() {
 
         const WindowStyle = {
@@ -21,8 +25,8 @@ export class CalculateWindow extends Component {
         return (
             <>
                 <div className="Window" style={WindowStyle}>
-                    <CalcInput/>
-                    <AiOutlineInfoCircle onClick={this.props.parentCallback} style={InfoLogoStyle}/>
+                    <CalcInput getResult={this.props.getResult} getData={this.props.getData} getClick={this.props.getClick}/>
+                    <AiOutlineInfoCircle onClick={this.props.parentOpenModal} style={InfoLogoStyle}/>
                 </div>
             </>
         )

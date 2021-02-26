@@ -25,7 +25,7 @@ class ResultWindow extends Component {
         return (
             <div>
                 <div className="ResultContainer" style={backgroundStyle}>
-                    <h2 className="Result" style={contentStyle} >± 00,00 €</h2>
+                    <h2 className="Result" style={contentStyle} >{this.props.result} €</h2>
                 </div>
             </div>
         )

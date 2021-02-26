@@ -1,9 +1,13 @@
 import React, { Component } from 'react'
 
 export class CalcInput extends Component {
+    constructor(props){
+        super(props)
+        
+    }
+
     render() {
 
-        const val = "00,00 €"
 
         const formStyle = {
             backgroundColor: "#EE6565",
@@ -47,7 +51,7 @@ export class CalcInput extends Component {
                 <form style={formStyle}>
                     <h2 style={labelStyle}>Uusi saldo:</h2>
                     <input style={inputStyle} type="text" placeholder="00,00 €"></input>
-                    <input style={buttonStyle} type="submit" value="Laske"></input>
+                    <input style={buttonStyle} type="submit" value="Laske" onClick={this.props.getClick} ></input>
                 </form>
             </div>
         )
