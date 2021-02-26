@@ -3,7 +3,21 @@ import React, { Component } from 'react'
 export class CalcInput extends Component {
     constructor(props){
         super(props)
-        
+        this.handleChange = this.handleChange.bind(this)
+        this.getNewBudget = this.getNewBudget.bind(this)
+        this.state = {
+            inputted_budget: ""
+        }
+    }
+
+    handleChange(event){
+        this.setState({
+            inputted_budget: event.target.value
+        })
+    }
+
+    getNewBudget(){
+        this.props.getBudget(this.state.inputted_budget)
     }
 
     render() {
@@ -46,12 +60,13 @@ export class CalcInput extends Component {
             marginTop: "15%"
         }
 
+
         return (
             <div>
                 <form style={formStyle}>
                     <h2 style={labelStyle}>Uusi saldo:</h2>
-                    <input style={inputStyle} type="text" placeholder="00,00 €"></input>
-                    <input style={buttonStyle} type="submit" value="Laske" onClick={this.props.getClick} ></input>
+                    <input style={inputStyle} value={this.state.inputted_budget} onChange={this.handleChange} type="text" placeholder="00,00 €"></input>
+                    <input onClick={this.getNewBudget} style={buttonStyle} type="button" value="Laske"></input>
                 </form>
             </div>
         )

@@ -8,6 +8,8 @@ export class CalculateWindow extends Component {
         super(props)
     }
 
+    
+
     render() {
 
         const WindowStyle = {
@@ -25,7 +27,7 @@ export class CalculateWindow extends Component {
         return (
             <>
                 <div className="Window" style={WindowStyle}>
-                    <CalcInput getResult={this.props.getResult} getData={this.props.getData} getClick={this.props.getClick}/>
+                    <CalcInput getBudget={this.props.getBudget} />
                     <AiOutlineInfoCircle onClick={this.props.parentOpenModal} style={InfoLogoStyle}/>
                 </div>
             </>

@@ -1,5 +1,5 @@
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import './App.css';
 import TitleBar from "./components/TitleBar";
 import ResultWindow from "./components/ResultWindow";
@@ -8,50 +8,33 @@ import InfoWindowModal from "./components/InfoWindowModal"
 
 
 
-class App extends React.Component {
+const App = () => {
 
-  constructor(props){
-    super(props)
-    this.openModal = this.openModal.bind(this)
-    this.getClick = this.getClick.bind(this)
-    this.state = {
-      show: false,
-      budget: 0
-    }
 
+  const [show, setShow] = useState(false)
+  const showHide = () => {
+    setShow(show => !show)
   }
 
-  openModal(){
-    this.setState(state => ({
-      show: !state.show
-    }))
-  }
+  const [budget, setBudget] = useState(0)
+  const [result, setResult] = useState(3)
 
-  async getClick(event, amount){
-    event.preventDefault()
-    const url = "https://api.randomuser.me/"
-    const res = await fetch(url)
+   useEffect(async () => {
+    const url = "https://api.randomuser.me/"; //TODO create api link from budget
+    const res = await fetch(url);
     const data = await res.json()
-    
-    this.setState({
-      budget: data.results[0].gender
-    })
-  }
-
-  getBudget(amount){
-    this.getClick()
-  }
+    const item = data.results[0]  
+    console.log(item.gender); //TODO set result to be the answer from api
+  }, [budget])
   
-  render() {
     return(
       <div className="Container">
         <TitleBar/>
-        <ResultWindow result={this.state.budget}/>
-        <CalculateWindow getResult={this.getMyData} parentOpenModal={this.openModal} getClick={this.getClick}/>
-        {this.state.show ? <InfoWindowModal parentCloseModal={this.openModal}/> : null}
+        <ResultWindow budget={result} />
+        <CalculateWindow parentOpenModal={showHide} getBudget={setBudget}/>
+        {show ? <InfoWindowModal parentCloseModal={showHide}/> : null}
       </div>
     )
-  }
     
 }
   
