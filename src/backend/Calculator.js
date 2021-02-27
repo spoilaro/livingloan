@@ -9,6 +9,13 @@ function surviveMaybe(budget){
     var should_have;
     const one_day_loan = 650 / 30;
 
+    if (budget == 0){
+        return "0"
+    }
+    if (budget.includes("€")){
+        budget = parseInt(budget, 10);
+    }
+
     if (1 <= m <=5){
         end_month = 5;
     } else {

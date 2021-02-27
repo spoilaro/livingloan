@@ -6,6 +6,8 @@ import ResultWindow from "./components/ResultWindow";
 import CalculateWindow from "./components/CalculateWindow"
 import InfoWindowModal from "./components/InfoWindowModal"
 
+import { surviveMaybe } from "./backend/Calculator"
+
 
 
 const App = () => {
@@ -19,12 +21,17 @@ const App = () => {
   const [budget, setBudget] = useState(0)
   const [result, setResult] = useState(3)
 
-   useEffect(async () => {
-    const url = "https://api.randomuser.me/"; //TODO create api link from budget
-    const res = await fetch(url);
-    const data = await res.json()
-    const item = data.results[0]  
-    console.log(item.gender); //TODO set result to be the answer from api
+   useEffect( () => {
+    // const url = "https://api.randomuser.me/"; //TODO create api link from budget
+    // const res = await fetch(url);
+    // const data = await res.json()
+    // const item = data.results[0]  
+    // console.log(item.gender); //TODO set result to be the answer from api
+
+    var result = surviveMaybe(budget)
+    setResult(result);
+
+
   }, [budget])
   
     return(
