@@ -33,7 +33,8 @@ export class CalcInput extends Component {
         const buttonStyle = {
             backgroundColor: "white",
             height: "7vh",
-            width: "29vh",
+            minHeight: "60px",
+            width: "55vw",
             color: "#EE6565",
             border: "none",
             borderRadius: "15px",
@@ -42,8 +43,9 @@ export class CalcInput extends Component {
         }
 
         const inputStyle = {
-            width: "38vh",
+            width: "75vw",
             height: "10vh",
+            minHeight: "60px",
             backgroundColor: "white",
             border: "none",
             borderRadius: "10px",
