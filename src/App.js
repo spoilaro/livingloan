@@ -27,7 +27,6 @@ const App = () => {
     // const data = await res.json()
     // const item = data.results[0]  
     // console.log(item.gender); //TODO set result to be the answer from api
-
     var result = surviveMaybe(budget)
     setResult(result);
 

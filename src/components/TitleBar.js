@@ -9,6 +9,7 @@ class TitleBar extends React.Component{
             display: "flex",
             alignItems: "center",
             height: "22vh",
+            minHeight: "90px",
             fontSize: "35px",
             padding: "0 0 0 4%"
         }
