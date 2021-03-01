@@ -24,8 +24,13 @@ function surviveMaybe(budget){
     
     should_have = Math.round((end_month - m) * one_mont_loan + d * one_day_loan)
     var current = budget - should_have
+
+    var result = current.toString()
+    if (current > 0){
+        result = "+" + result
+    }
     
-    return current;
+    return result;
    
 }
 export {surviveMaybe};

@@ -48,9 +48,10 @@ export class InfoWindowModal extends Component {
             
             <div style={backgroundStyle}>
                 <AiOutlineInfoCircle style={InfoLogoStyle}/>
-                <p style={TextStyle}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Vestibulum in dictum enim. Maecenas feugiat viverra ex. ornare. 
-                    Nulla quis bibendum erat.
+                <p style={TextStyle}> Tällä netti sovelluksella voit laskea jäljellä olevan
+                opintolainan määrän loppu kuukaudelle. Sovellus olettaa, että opinto lainasi suuruus
+                on noin 655€ per kuukausi. Syötä koko jäljellä olevan opintolainan määrä ja laske 
+                oletko miinuksella vai plussalla.
                 </p>
                 <input style={buttonStyle} onClick={this.props.parentCloseModal} type="submit" value="OK" ></input>
             </div>

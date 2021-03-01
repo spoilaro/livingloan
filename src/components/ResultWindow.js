@@ -7,7 +7,7 @@ class ResultWindow extends Component {
         const contentStyle = {
             position: "absolute",
             color: "#EE6565",
-            fontSize: "3.1rem",
+            fontSize: "3.6rem",
             position: "absolute",
             backgroundColor: "white",
             fontWeight: "500"
