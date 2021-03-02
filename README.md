@@ -33,6 +33,8 @@
 - [ ] Format the code properly
 - [ ] Add more TODOs
 - [x] Survive from school assignments
+- [ ] Make the app usable on desktop browser
+- [ ] Design GUI for desktop browser
 
   
 

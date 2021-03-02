@@ -28,7 +28,7 @@ function surviveMaybe(budget){
     var result = current.toString()
     if (current > 0){
         result = "+" + result
-    }
+    } 
     
     return result;
    
