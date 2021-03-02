@@ -5,7 +5,7 @@ export class InfoWindowModal extends Component {
     render() {
 
         const backgroundStyle = {
-            height: "50vh",
+            //height: "50vh",
             width: "80%",
             backgroundColor: "#EE6565",
             position: "absolute",
@@ -15,20 +15,20 @@ export class InfoWindowModal extends Component {
             flexFlow: "column",
             borderRadius: "10px",
             border: "solid #FAC6C6 3px",
-            padding: "5%",
+            padding: "3vh",
         }
         const InfoLogoStyle = {
-            fontSize: "3em",
+            fontSize: "2em",
             backgroundColor: "#EE6565",
             color: "white",
-            marginLeft: "37%",
-            marginTop: "10%"
+            marginLeft: "33%",
+            marginTop: "2vh"
         }
         const TextStyle = {
             color: "white",
             backgroundColor: "#EE6565",
             textAlign: "center",
-            marginTop: "10%",
+            marginTop: "3vh",
             fontSize: "1"
         }
         const buttonStyle = {
@@ -39,7 +39,7 @@ export class InfoWindowModal extends Component {
             border: "none",
             borderRadius: "15px",
             fontSize: "1.2em",
-            marginTop: "10%",
+            marginTop: "3vh",
             marginLeft: "24%"
 
         }
@@ -47,7 +47,8 @@ export class InfoWindowModal extends Component {
         return (
             
             <div style={backgroundStyle}>
-                <AiOutlineInfoCircle style={InfoLogoStyle}/>
+                {/* <AiOutlineInfoCircle style={InfoLogoStyle}/> */}
+                <h1 style={InfoLogoStyle} >Ohje</h1>
                 <p style={TextStyle}> Tällä netti sovelluksella voit laskea jäljellä olevan
                 opintolainan määrän loppu kuukaudelle. Sovellus olettaa, että opinto lainasi suuruus
                 on noin 655€ per kuukausi. Syötä koko jäljellä olevan opintolainan määrä ja laske 

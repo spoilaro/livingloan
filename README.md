@@ -25,15 +25,15 @@
 
 <h2>To Do List</h2>
 
-- [ ] Create the Flask API
-- [ ] Implement API calls to React app
-- [ ] Create logo
+- [x] Create logo
+- [ ] Improve logo
 - [ ] Create browser hyper link images
 - [ ] Improve README.md (This file)
 - [ ] Clean up the project files
 - [ ] Format the code properly
 - [ ] Add more TODOs
-- [ ] Survive from school assignments
+- [x] Survive from school assignments
+
   
 
 
