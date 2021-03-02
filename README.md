@@ -27,10 +27,10 @@
 
 - [x] Create logo
 - [ ] Improve logo
-- [ ] Create browser hyper link images
-- [ ] Improve README.md (This file)
+- [x] Create browser hyper link images
+- [x] Improve README.md (This file) // It can still be improved a lot more
 - [ ] Clean up the project files
-- [ ] Format the code properly
+- [x] Format the code properly
 - [ ] Add more TODOs
 - [x] Survive from school assignments
 - [ ] Make the app usable on desktop browser
